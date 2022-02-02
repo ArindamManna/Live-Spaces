@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 0;
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+button,
+.button {
+  font-family: "Mukta", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.display-none {
+  display: none;
+}
+
+.position-re {
+  position: relative;
+}
+
+.position-ab {
+  position: absolute;
+}
+
+.overflow-vis {
+  overflow: visible;
+}
+
+.overflow-hid {
+  overflow: hidden;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-ai-fs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-di-co {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-di-rr {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.visibility-hid {
+  visibility: hidden;
+}
+
+.visibility-vis {
+  visibility: visible;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.main_container {
+  margin-top: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_container .card {
+  width: 26.25rem;
+  height: 19.75rem;
+  margin-top: 1.875rem;
+  margin-right: 1.875rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.main_container .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main_container .card .pic {
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+}
+
+.main_container .card .bottom {
+  height: 40%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.main_container .card .bottom .name {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.main_container .card .bottom .btn {
+  height: 3.25rem;
+  width: 7.625rem;
+  background-color: #18181a;
+  margin-left: 1.5rem;
+  margin-top: 1.1rem;
+  border-radius: 0.5rem;
+}
+
+.main_container .card .bottom .btn div {
+  margin-left: 0.625rem;
+}
+
+.main_container .card .bottom .btn .span2 {
+  color: #cfcfcf;
+}
+
+.App {
+  width: calc(100% - 4rem);
+  margin: 2rem 2rem 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.App .description {
+  margin-top: 1rem;
+  color: #6e6a6a;
+}
+
+.App .options {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 39.9375em) {
+  .App .options {
+    overflow-x: scroll;
+  }
+}
+
+.App .options .option {
+  width: 10.813rem;
+  height: 2.5rem;
+  margin-right: 0.75rem;
+  border-radius: 1.25rem;
+  border: 2px solid #dbdde1;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 39.9375em) {
+  .App .options .option {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+.App .options .option_active {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

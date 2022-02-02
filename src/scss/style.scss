@@ -1,0 +1,46 @@
+@import "mixins";
+@import "globals";
+@import "variables";
+@import "navbar";
+@import "card";
+
+.App {
+  width: calc(100% - 4rem);
+  margin: 2rem 2rem 0;
+  font-family: "Roboto", sans-serif;
+  
+  .description {
+    margin-top: 1rem;
+    color: #6e6a6a;
+  }
+  .options {
+    margin-top: 2rem;
+    width: 100%;
+    @include breakpoint-down(small){
+        
+        overflow-x: scroll;
+    }
+    
+    .option {
+      width: 10.813rem;
+      height: 2.5rem;
+      margin-right: 0.75rem;
+      border-radius: 1.25rem;
+      border: 2px solid #dbdde1;
+      font-size: 1rem;
+      font-weight: bold;
+      color: black;
+      cursor: pointer;
+      @include breakpoint-down(small){
+
+          flex-shrink: 0;
+      }
+
+      &_active {
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+      }
+    }
+  }
+}
